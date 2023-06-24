@@ -40,20 +40,13 @@ def number_of_primes(n):
         
     nums = np.arange(1,n+1,1)
     
+    count = 0
     results = []
+    primes = []
     for value in nums:
         result = check_prime(int(value))
-        results.append(result)
-
-    count = 0
-    for item in results:
-        if '!' in item:
+        if '!' in result:
             count += 1
-            
-    primes = []
-    for val in nums:
-        is_prime = check_prime(int(val))
-        if '!' in is_prime:
-            primes.append(val)  
-            
+            primes.append(value) 
+                   
     return primes, count
