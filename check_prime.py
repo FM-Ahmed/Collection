@@ -18,7 +18,7 @@ def check_prime(n):
             count += 1
             if count >= 3:
                 break
-    if count == 2:
+    if count == 2: # uses the definition that a number is a prime IF it can be divided by exactly two numbers, 1 and itself. I.e. 1 is not a prime.
         statement = '{} is a prime!'.format(n)
     else:
         statement = '{} is not a prime...'.format(n)  
