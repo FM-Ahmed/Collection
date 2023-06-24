@@ -1,6 +1,6 @@
 import numpy as np
 
-# Function uses the following definition of prime numbers:
+# Function check_prime uses the following definition of prime numbers:
 # It is a prime IF it can be divided by EXACTLY two numbers.
 # I.e. 1 is not a prime.
 
