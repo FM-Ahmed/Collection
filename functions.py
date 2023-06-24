@@ -50,11 +50,11 @@ def primes(n):
         raise ValueError('Input {} is not a whole number... Please provide an integer.'.format(n))
         
     nums = np.arange(1,n+1,1)
-    primes_numbers = []
+    prime_numbers = []
     
     for val in nums:
         is_prime = check_prime(int(val))
         if '!' in is_prime:
-            primes_numbers.append(val)
+            prime_numbers.append(val)
         
-    return primes_numbers
+    return prime_numbers
