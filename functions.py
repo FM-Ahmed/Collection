@@ -44,3 +44,17 @@ def number_of_primes(n):
         if '!' in item:
             count += 1      
     return 'There are {} prime numbers between 1 and {}.'.format(count, n)
+
+def primes(n):
+    if type(n) != int:
+        raise ValueError('Input {} is not a whole number... Please provide an integer.'.format(n))
+        
+    nums = np.arange(1,n+1,1)
+    primes_numbers = []
+    
+    for val in nums:
+        is_prime = check_prime(int(val))
+        if '!' in is_prime:
+            primes_numbers.append(val)
+        
+    return primes_numbers
