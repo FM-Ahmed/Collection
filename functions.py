@@ -28,25 +28,16 @@ def check_prime(n):
         statement = '{} is not a prime...'.format(n)  
     return statement
 
-def number_of_primes(n):
-        # Input:
-            # n: some arbitrary integer, larger number = slower function
-        # Output:
-            # primes: a list of prime numbers between 1 and n.
-            # count: how many prime numbers there are between 1 and n.
-    
+def primes(n):
     if type(n) != int:
         raise ValueError('Input {} is not a whole number... Please provide an integer.'.format(n))
         
     nums = np.arange(1,n+1,1)
     
-    count = 0
-    results = []
-    primes = []
+    prime_numbers = []
     for value in nums:
         result = check_prime(int(value))
         if '!' in result:
-            count += 1
-            primes.append(value) 
-                   
-    return primes, count
+            prime_numbers.append(value) 
+            
+    return prime_numbers
