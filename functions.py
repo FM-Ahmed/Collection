@@ -27,3 +27,20 @@ def check_prime(n):
     else:
         statement = '{} is not a prime...'.format(n)  
     return statement
+
+def number_of_primes(n):
+    if type(n) != int:
+        raise ValueError('Input {} is not a whole number... Please provide an integer.'.format(n))
+        
+    nums = np.arange(1,n+1,1)
+    results = []
+    
+    for value in nums:
+        result = check_prime(int(value))
+        results.append(result)
+
+    count = 0
+    for item in results:
+        if '!' in item:
+            count += 1      
+    return 'There are {} prime numbers between 1 and {}.'.format(count, n)
