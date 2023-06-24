@@ -29,6 +29,12 @@ def check_prime(n):
     return statement
 
 def number_of_primes(n):
+        # Input:
+            # n: some arbitrary integer, larger number = slower function
+        # Output:
+            # primes: a list of prime numbers between 1 and n.
+            # count: how many prime numbers there are between 1 and n.
+    
     if type(n) != int:
         raise ValueError('Input {} is not a whole number... Please provide an integer.'.format(n))
         
