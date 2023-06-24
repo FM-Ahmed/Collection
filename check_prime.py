@@ -1,5 +1,9 @@
 import numpy as np
 
+# Function uses the following definition of prime numbers:
+# It is a prime IF it can be divided by EXACTLY two numbers.
+# I.e. 1 is not a prime.
+
 def check_prime(n):
     if type(n) != int:
         raise ValueError('Input {} is not a whole number... Please provide an integer.'.format(n))
@@ -18,7 +22,7 @@ def check_prime(n):
             count += 1
             if count >= 3:
                 break
-    if count == 2: # uses the definition that a number is a prime IF it can be divided by exactly two numbers, 1 and itself. I.e. 1 is not a prime.
+    if count == 2:
         statement = '{} is a prime!'.format(n)
     else:
         statement = '{} is not a prime...'.format(n)  
