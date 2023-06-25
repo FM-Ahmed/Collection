@@ -23,10 +23,11 @@ def check_prime(n):
             if count >= 3:
                 break
     if count == 2:
-        statement = '{} is a prime!'.format(n)
+        is_prime = True
     else:
-        statement = '{} is not a prime...'.format(n)  
-    return statement
+        is_prime = False  
+        
+    return is_prime
 
 def primes(n):
     if type(n) != int:
@@ -37,7 +38,7 @@ def primes(n):
     prime_numbers = []
     for value in nums:
         result = check_prime(int(value))
-        if '!' in result:
+        if result == True:
             prime_numbers.append(value) 
             
     return prime_numbers
