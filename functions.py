@@ -9,6 +9,7 @@ def check_prime(n):
             # n: some arbitrary whole number.
         # Output:
             # is_prime: returns either True or False. 
+        
     if type(n) != int:
         raise ValueError('Input {} is not a whole number... Please provide an integer.'.format(n))
         
