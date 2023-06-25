@@ -8,7 +8,7 @@ def check_prime(n):
         # Input:
             # n: some arbitrary whole number.
         # Output:
-            # is_prime: returns either True or False. 
+            # is_prime: returns either True or False.
         
     if type(n) != int:
         raise ValueError('Input {} is not a whole number... Please provide an integer.'.format(n))
@@ -35,6 +35,11 @@ def check_prime(n):
     return is_prime
 
 def primes(n):
+        # Input:
+            # n: some arbitrary whole number.
+        # Output:
+            # prime_numbers: a list of prime numbers.
+        
     if type(n) != int:
         raise ValueError('Input {} is not a whole number... Please provide an integer.'.format(n))
         
