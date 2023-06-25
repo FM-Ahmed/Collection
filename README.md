@@ -3,10 +3,10 @@
 Includes two functions: check_prime and primes. 
 
 ### check_prime.py 
-Checks if some arbitrary input n is a prime number or not. My take on this for fun, and likely not the most efficient. 
+Checks if some arbitrary input $n$ is a prime number or not. My take on this for fun, and likely not the most efficient. 
 
 ### primes.py
-Uses the function check_prime.py to list all the primes between 1 and n. The length of the list is the amount of prime numbers between 1 and n.
+Uses the function check_prime.py to list all the primes between $1$ and $n$. The length of the list is the amount of prime numbers between $1$ and $n$.
 
 ### fibonacci_sequence.py
 Calculates the fibonacci sequence from $F_0$ to $F_n$.
