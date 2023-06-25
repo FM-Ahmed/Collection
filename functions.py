@@ -38,7 +38,7 @@ def primes(n):
         # Input:
             # n: some arbitrary whole number.
         # Output:
-            # prime_numbers: a list of prime numbers.
+            # prime_numbers: a list of prime numbers between 1 and n.
         
     if type(n) != int:
         raise ValueError('Input {} is not a whole number... Please provide an integer.'.format(n))
