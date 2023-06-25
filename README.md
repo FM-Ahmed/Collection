@@ -9,7 +9,7 @@ Checks if some arbitrary input n is a prime number or not. My take on this for f
 Uses the function check_prime.py to list all the primes between 1 and n. The length of the list is the amount of prime numbers between 1 and n.
 
 ### fibonacci_sequence.py
-Calculates the fibonacci sequence.
+Calculates the fibonacci sequence from F_0 to F_n.
 
 ### Example.py
 An example of how the functions in primes.py was used to plot prime numbers in polar coordinates to find a spiralling pattern.
