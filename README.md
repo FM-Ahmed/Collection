@@ -7,7 +7,7 @@ Checks if some arbitrary input $n$ is a prime number or not. My take on this for
 Checks if some arbitrary input $n$ is a prime number or not. Version 2.
 
 ### primes.py
-Uses the function check_prime.py to list all the primes between $1$ and $n$. The length of the list is the amount of prime numbers between $1$ and $n$.
+Uses the function check_prime.py to list all the primes between $1$ and $n$. The length of the list is the amount of prime numbers between $1$ and $n$. Check_prime.py can be substituted with check_prime2.py without issues if wanted.
 
 ### fibonacci_sequence.py
 Calculates the fibonacci sequence from $F_0$ to $F_n$.
