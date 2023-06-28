@@ -1,6 +1,6 @@
 def check_prime2(x):
         # Input:
-            # n: some arbitrary whole number.
+            # x: some arbitrary whole number.
         # Output:
             # is_prime: returns either True or False.
         
