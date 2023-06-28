@@ -3,6 +3,9 @@
 ### check_prime.py 
 Checks if some arbitrary input $n$ is a prime number or not. My take on this for fun, and likely not the most efficient. 
 
+### prime_number.py
+Checks if some arbitrary input $n$ is a prime number or not. Version 2 of checking if some input is a prime number.
+
 ### primes.py
 Uses the function check_prime.py to list all the primes between $1$ and $n$. The length of the list is the amount of prime numbers between $1$ and $n$.
 
