@@ -4,8 +4,8 @@ def check_prime2(x):
         # Output:
             # is_prime: returns either True or False.
         
-    if type(n) != int:
-        raise ValueError('Input {} is not a whole number... Please provide an integer.'.format(n))
+    if type(x) != int:
+        raise ValueError('Input {} is not a whole number... Please provide an integer.'.format(x))
         
     rng = np.arange(1, x + 1, 1)
     c = 0
