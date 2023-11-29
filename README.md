@@ -1,5 +1,4 @@
 # Math
-## Contents of repository
 ### check_prime.py 
 Checks if some arbitrary input $n$ is a prime number or not. My take on this for fun, and likely not the most efficient. 
 
