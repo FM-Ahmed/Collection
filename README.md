@@ -18,3 +18,6 @@ An example of how the functions in primes.py was used to plot prime numbers in p
 
 ### bin_to_dec.py
 Converts a binary number to its decimal form.
+
+### dec_to_bin.py
+Converts a decimal number to its binary representation.
