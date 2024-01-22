@@ -15,3 +15,6 @@ Calculates the fibonacci sequence from $F_0$ to $F_n$.
 An example of how the functions in primes.py was used to plot prime numbers in polar coordinates to find a spiralling pattern.
 
 ![download](https://github.com/FM-Ahmed/Math/assets/128718838/6a7ac197-f3c0-41c8-918c-dff15ea72dd9)
+
+### bin_to_dec.py
+Converts a binary number to its decimal form.
