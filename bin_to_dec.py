@@ -1,6 +1,6 @@
 def bin_to_dec(binary_string):   
     '''
-    Convert a binary number to decimal
+    Convert a binary number to decimal number
     
     Args:
     - binary_string (str): binary number in string format
