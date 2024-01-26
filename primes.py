@@ -1,20 +1,17 @@
-import numpy as np
-
 def primes(n):
-        # Input:
-            # n: some arbitrary whole number.
-        # Output:
-            # prime_numbers: a list of prime numbers between 1 and n.
+    '''
+    Input:
+        n (int): some arbitrary whole number.
+    Returns:
+        prime_numbers (list): a list of prime numbers between 1 and n (including n).
+    '''
+    if not isinstance(n, int):
+        raise ValueError(f'Input {n} is invalid... Please provide an integer.')
         
-    if type(n) != int:
-        raise ValueError('Input {} is not a whole number... Please provide an integer.'.format(n))
-        
-    nums = np.arange(1,n+1,1)
+    nums = range(2, n+1)
     
     prime_numbers = []
     for value in nums:
-        result = check_prime(int(value))
-        if result == True:
-            prime_numbers.append(value) 
-            
+        if check_prime(int(value)):
+            prime_numbers.append(value)            
     return prime_numbers
