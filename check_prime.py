@@ -1,4 +1,4 @@
-def check_prime2(x):
+def check_prime(x):
         # Input:
             # x: some arbitrary whole number.
         # Output:
