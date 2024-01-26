@@ -18,3 +18,6 @@ Converts a binary number to its decimal form.
 
 ### dec_to_bin.py
 Converts a decimal number to its binary representation.
+
+### logic_gates.py
+Simulate basic logic gates. 
