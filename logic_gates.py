@@ -3,7 +3,7 @@ class logic_gates:
         pass
     
     def validate_binary(self, binary_inputs):
-        if not all(bit in '01' for bit in binary_inputs):
+        if not isinstance(binary_inputs, str) or (not all(bit in '01' for bit in binary_inputs)):
             raise ValueError(f'Input must be a n-bit binary number.') # check if the input is valid
     
     def not_gate(self, binary_inputs):
