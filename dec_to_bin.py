@@ -1,7 +1,4 @@
 def dec_to_bin(dec_integer):
-    if not isinstance(dec_integer, int):
-        raise ValueError(f'Input must be an integer.') # check if the input is valid
-    
     '''
     Convert a decimal number to binary number
     
@@ -11,6 +8,9 @@ def dec_to_bin(dec_integer):
     Returns:
     - str: binary representation of decimal number
     '''
+    if not isinstance(dec_integer, int):
+        raise ValueError(f'Input must be an integer.') # check if the input is valid
+        
     binary_digits = []
     while dec_integer > 0:
         mod = dec_integer % 2
