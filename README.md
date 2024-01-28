@@ -21,6 +21,3 @@ Converts a decimal number to its binary representation.
 
 ### logic_gates.py
 Simulate basic logic gates. 
-
-### Gif
-![anim](https://github.com/FM-Ahmed/Math/assets/128718838/74c78285-8acc-48d1-97c3-437cf39c5833)
