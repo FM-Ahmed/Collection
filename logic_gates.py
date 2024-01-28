@@ -27,7 +27,7 @@ class logic_gates:
     
     def xor_gate(self, binary_inputs):
         self.validate_binary(binary_inputs)
-        return '1' if sum([int(i) for i in binary_inputs]) in (1, len(binary_inputs)-1) else '0'
+        return '1' if sum([int(i) for i in binary_inputs]) in range(1, len(binary_inputs)+1, 2) else '0'
     
     def nor_gate(self, binary_inputs):
         self.validate_binary(binary_inputs)
