@@ -21,3 +21,6 @@ Converts a decimal number to its binary representation.
 
 ### logic_gates.py
 Simulate basic logic gates. 
+
+### PLD.py
+Simulate a Programmable Logic Device (PLD). Currently the class only has one function: check if a 4-bit binary number is a prime or not. 
