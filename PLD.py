@@ -19,7 +19,7 @@ class PLD:
     
     def process_4bit_inputs(self, binary_string):
         validated_data = self.validate_binary_inputs(inputs = [binary_string])
-            binary_string = validated_data[0]
+        binary_string = validated_data[0]
         
         if not len(binary_string) == 4:
             raise ValueError(f'Input must be a 4-bit binary number.')
