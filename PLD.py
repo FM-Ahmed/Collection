@@ -37,10 +37,15 @@ class PLD:
         for inp in (first_binary, second_binary):
             if not isinstance(inp, str) or (not all(bit in '01' for bit in inp)) or (len(inp) < 1):
                 raise ValueError(f'Input must be a n-bit binary number.') # check if the input is valid
-            
-        first_binary = first_binary.zfill(4)
-        second_binary = second_binary.zfill(4)
         
+            max_len = max(len(first_binary), len(second_binary))
+            if max_len < 5:
+                first_binary = first_binary.zfill(4)
+                second_binary = second_binary.zfill(4)
+            else:
+                first_binary = first_binary.zfill(max_len)
+                second_binary = second_binary.zfill(max_len)
+    
         str_length = len(first_binary)
         carry_bit = '0'
         ans = []
