@@ -96,7 +96,7 @@ class PLD:
         first_input = validated_data[0]
         second_input = validated_data[1]
         
-        for i in range(0, len(first_input) - 1):
+        for i in range(0, len(first_input)):
             a, b = first_input[i], second_input[i]
             
             t1 = self.gate.and_gate(self.gate.not_gate(a) + b)
