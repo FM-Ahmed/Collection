@@ -90,3 +90,21 @@ class PLD:
         if carry_bit == '1':
             ans.append('1')
         return ''.join(ans[::-1])
+    
+    def comparator(self, first_input, second_input):
+        validated_data = self.validate_binary_inputs(inputs = [first_input, second_input])
+        first_input = validated_data[0]
+        second_input = validated_data[1]
+        
+        for i in range(0, len(first_input) - 1):
+            a, b = first_input[i], second_input[i]
+            
+            t1 = self.gate.and_gate(self.gate.not_gate(a) + b)
+            t2 = self.gate.and_gate(a + self.gate.not_gate(b))
+            P = self.gate.or_gate(t1 + t2)
+            
+            if P == '1':
+                return 1 if self.gate.and_gate(a + self.gate.not_gate(b)) == '1' else -1
+            else:
+                continue
+        return 0
