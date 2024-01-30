@@ -2,7 +2,7 @@ class PLD:
     def __init__(self):
         self.gate = logic_gates()
         
-    def validate_inputs(self, inputs):
+    def validate_binary_inputs(self, inputs):
         if not isinstance(inputs, list):
             raise ValueError('Please provide a (list) containing binary inputs.')
         for inp in inputs:
@@ -32,7 +32,7 @@ class PLD:
         return A, not_A, B, not_B, C, not_C, D, not_D
     
     def is_4bit_prime(self, binary_string):
-        validated_data = self.validate_inputs(inputs = [binary_string])
+        validated_data = self.validate_binary_inputs(inputs = [binary_string])
         binary_string = validated_data[0]
         
         if not len(binary_string) == 4:
@@ -51,7 +51,7 @@ class PLD:
         return int(p) == 1
     
     def add_two_binary(self, first_binary, second_binary):
-        validated_data = self.validate_inputs(inputs = [first_binary, second_binary])
+        validated_data = self.validate_binary_inputs(inputs = [first_binary, second_binary])
         first_binary = validated_data[0]
         second_binary = validated_data[1]
     
