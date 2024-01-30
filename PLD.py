@@ -1,6 +1,21 @@
 class PLD:
     def __init__(self):
         self.gate = logic_gates()
+        
+    def validate_inputs(self, inputs):
+        if not isinstance(inputs, list):
+            raise ValueError('Please provide a (list) containing binary inputs.')
+        for inp in inputs:
+            if not isinstance(inp, str) or (not all(bit in '01' for bit in inp)) or (len(inp) < 1):
+                raise ValueError(f'Input must be a n-bit binary number.') # check if the input is valid
+                
+        threshold = 5
+        max_len = max(len(binary) for binary in inputs)
+        if max_len < threshold:
+            padded_inputs = [binary.zfill(4) for binary in inputs]
+        else:
+            padded_inputs = [binary.zfill(max_len) for binary in inputs]
+        return padded_inputs
     
     def process_inputs(self, binary_string):
         A = binary_string[0]
@@ -17,7 +32,9 @@ class PLD:
         return A, not_A, B, not_B, C, not_C, D, not_D
     
     def is_4bit_prime(self, binary_string):
-        self.gate.validate_binary(binary_string)
+        validated_data = self.validate_inputs(inputs = [binary_string])
+        binary_string = validated_data[0]
+        
         if not len(binary_string) == 4:
             raise ValueError(f'Input must be a 4-bit binary number.')
         
@@ -34,17 +51,9 @@ class PLD:
         return int(p) == 1
     
     def add_two_binary(self, first_binary, second_binary):
-        for inp in (first_binary, second_binary):
-            if not isinstance(inp, str) or (not all(bit in '01' for bit in inp)) or (len(inp) < 1):
-                raise ValueError(f'Input must be a n-bit binary number.') # check if the input is valid
-        
-            max_len = max(len(first_binary), len(second_binary))
-            if max_len < 5:
-                first_binary = first_binary.zfill(4)
-                second_binary = second_binary.zfill(4)
-            else:
-                first_binary = first_binary.zfill(max_len)
-                second_binary = second_binary.zfill(max_len)
+        validated_data = self.validate_inputs(inputs = [first_binary, second_binary])
+        first_binary = validated_data[0]
+        second_binary = validated_data[1]
     
         str_length = len(first_binary)
         carry_bit = '0'
