@@ -83,7 +83,7 @@ class convert_number_system:
             decimal_number = floor
         return ''.join(ans[::-1])
     
-    def hex_to_dec(hex_string):
+    def hex_to_dec(self, hex_string):
         '''
         Convert a hex number to decimal number
 
