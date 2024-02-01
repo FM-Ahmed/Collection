@@ -14,7 +14,7 @@ class convert_number_system:
         '''
         bits = len(binary_string) # determine number of bits
         if not all(bit in '01' for bit in binary_string):
-            raise ValueError(f'Input must be a n-bit binary number.') # check if the input is valid
+            raise ValueError('Input must be a n-bit binary number.') # check if the input is valid
 
         # convert to binary and return in decimal form
         vals = []
@@ -33,7 +33,7 @@ class convert_number_system:
         - str: binary representation of decimal number
         '''
         if not isinstance(decimal_number, int):
-            raise ValueError(f'Input must be an integer.') # check if the input is valid
+            raise ValueError('Input must be an integer.') # check if the input is valid
 
         binary_digits = []
         while decimal_number > 0:
@@ -55,7 +55,7 @@ class convert_number_system:
         - (str): hex equivalent of decimal input
         '''
         if not isinstance(decimal_number, int):
-            raise ValueError(f'Input must be an integer.') # check if the input is valid
+            raise ValueError('Input must be an integer.') # check if the input is valid
         hex_values = {0: '0',
                       1: '1',
                       2 : '2',
@@ -94,7 +94,7 @@ class convert_number_system:
         - (int): decimal equivalent of hexadecimal input
         '''
         if not all(bit in '0123456789ABCDEF' for bit in hex_string):
-            raise ValueError(f'Input must be a hex number.') # check if the input is valid
+            raise ValueError('Input must be a hex number.') # check if the input is valid
         hex_values = {0: '0',
                       1: '1',
                       2 : '2',
