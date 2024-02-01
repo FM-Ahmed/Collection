@@ -93,6 +93,7 @@ class convert_number_system:
         Returns:
         - (int): decimal equivalent of hexadecimal input
         '''
+        hex_string = hex_string.upper()
         if not all(bit in '0123456789ABCDEF' for bit in hex_string):
             raise ValueError('Input must be a hex number.') # check if the input is valid
         hex_values = {0: '0',
