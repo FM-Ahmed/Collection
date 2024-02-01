@@ -80,3 +80,36 @@ class convert_number_system:
             ans.append(hex_values[int(remainder*16)])
             decimal_number = floor
         return ''.join(ans[::-1])
+    
+    def hex_to_dec(hex_string):
+        '''
+        Convert a hex number to decimal number
+
+        Args:
+        - hex_string (string): hexadecimal number
+
+        Returns:
+        - (int): decimal equivalent of hexadecimal input
+        '''
+        hex_values = {0: '0',
+                      1: '1',
+                      2 : '2',
+                      3: '3',
+                      4: '4',
+                      5: '5',
+                      6: '6',
+                      7: '7',
+                      8: '8',
+                      9: '9',
+                      10: 'A',
+                      11: 'B',
+                      12: 'C',
+                      13: 'D',
+                      14: 'E',
+                      15: 'F'}
+
+        reversed_hex_values = dict((v, k) for (k, v) in hex_values.items())
+        decimal_number = 0
+        for i in range(0, len(hex_string), 1):
+            decimal_number += reversed_hex_values[hex_string[i]]*16**(len(hex_string) - 1 - i)
+        return decimal_number
