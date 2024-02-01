@@ -17,10 +17,10 @@ class convert_number_system:
             raise ValueError('Input must be a n-bit binary number.') # check if the input is valid
 
         # convert to binary and return in decimal form
-        vals = []
+        decimal_number = 0
         for i in range(0, len(binary_string)):
-            vals.append(int(binary_string[i]) * 2**((bits-1)-i))
-        return sum(vals)
+            decimal_number += int(binary_string[i]) * 2**((bits-1)-i)
+        return decimal_number
 
     def dec_to_bin(self, decimal_number):
         '''
