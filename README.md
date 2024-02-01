@@ -18,6 +18,7 @@ Switch number systems:
 - Decimal to binary.
 - Binary to decimal.
 - Decimal to hexadecimal.
+- Hexadecimal to decimal.
 
 ### logic_gates.py
 Simulate basic logic gates. 
