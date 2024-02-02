@@ -1,4 +1,4 @@
-def check_prime(x):
+def is_a_prime(x):
     '''
         Input:
             x (int): some arbitrary whole number.
