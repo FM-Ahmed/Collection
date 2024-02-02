@@ -1,5 +1,5 @@
 # Math
-### check_prime.py 
+### is_a_prime.py 
 Checks if some arbitrary input $n$ is a prime number or not.
 
 ### primes.py
