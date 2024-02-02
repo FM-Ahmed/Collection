@@ -26,3 +26,7 @@ Simulate basic logic gates.
 
 ### PLD.py
 Simulate a Programmable Logic Device (PLD). Currently the class only has one function: check if a 4-bit binary number is a prime or not. 
+
+# Game
+### blackjack.py
+Tried to make a blackjack game with basic functionality. Only two options available: hit or stand. There is also a betting system where you can enter your balance and bet 10, 50 or 100 coins, dollars or whatever. The game uses images of the cards to show on the tkinter app. For this to work, the images have a specific file naming scheme (e.g. '2_of_spades', '3_of_hearts', 'J_of_clubs', 'A_of_diamonds'). I haven't (yet) uploaded the folder with card images. 
