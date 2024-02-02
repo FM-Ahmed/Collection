@@ -13,6 +13,7 @@ An example of how the functions in primes.py was used to plot prime numbers in p
 
 ![download](https://github.com/FM-Ahmed/Math/assets/128718838/6a7ac197-f3c0-41c8-918c-dff15ea72dd9)
 
+# Electrical
 ### convert_number_system.py
 Switch number systems:
 - Decimal to binary.
